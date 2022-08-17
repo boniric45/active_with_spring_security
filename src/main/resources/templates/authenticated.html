@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <title>Active Sécurité - Espace Membre</title>
+    <style>
+
+    .displayed{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+    .btn{
+    display:inline-block;
+    justify-content:flex-start;
+   }
+
+.auth{
+    font-family: Comic sans, sans-serif;
+	font-size:16px;
+	color:black;
+	font-weight: 800;
+}
+
+.console{
+margin-left:10px;
+}
+
+ </style>
+</head>
+<body>
+
+<div class="btn">
+    <p class="auth" data-th-text="'Utilisateur : ' + ${userEmail}" ></p>
+    <a name="submit" href="/logout" type="submit" class="btn btn-danger">Se Déconnecter</a>
+</div>
+
+<img class="displayed"  src="./images/logo.png" alt=Image/>
+
+<div class="console">
+    <a name="submit" href="/console" type="submit" class="btn btn-info" hidden>Console</a>
+</div>
+
+
+<h3 align="center">Bienvenue sur l'espace connecté</h3>
+
+
+</body>
+</html>
